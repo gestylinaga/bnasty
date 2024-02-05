@@ -1,7 +1,121 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ProjectGrid from '../components/ProjectGrid.astro';
+import ProjectColumn from '../components/ProjectColumn.astro';
+import ProjectItem from '../components/ProjectItem.astro';
+import Lightbox from '../components/Lightbox.astro';
 ---
 
 <Layout title="bNasty">
-	<h1>hello</h1>
+	<div class="bg-1 flex-col">
+		<h1 class="text-white">Whattup dudes<br>B-Nasty in the house!</h1>
+		<a class="button" href="#about">Read More</a>
+	</div>
+
+	<div id="about"></div>
+
+	<section class="flex-col container">
+		<h2>About Me</h2>
+		<div class="hero text-center">
+			<img class="hero-img" src="/bnasty/imgs/hero.webp" alt="That's Me!">
+			<div class="flex-col">
+				<h3>I'm <strong>B-Nasty</strong></h3>
+				<p>I'm the nastiest foo in Murder-ietta.</p>
+				<p>King of Whitewood.</p>
+				<p>Real Gangsta OG.</p>
+				<p>Diamond 1 in League of Legends, Challenger in your heart.</p>
+				<p>Swollest dude on Los Alamos.</p>
+				<p>I like taking pictures, traveling, and working out.</p>
+				<p>Get at me!</p>
+				<div class="extra-imgs">
+					<img src="/bnasty/imgs/goof.webp" alt="also me">
+					<img src="/bnasty/imgs/easterEgg.webp" alt="also me">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div id="photos"></div>
+	<div class="bg-2 flex-col">
+		<h2 class="text-white">Photo Gallery</h2>
+		<p class="text-white">(Yes, I took all these photos, I'm <em>very</em>  talented.)</p>
+	</div>
+
+	<section>
+		<ProjectGrid>
+			<ProjectColumn>
+				<ProjectItem href="#lightbox3" src="/bnasty/imgs/3.webp" overlayText="" />
+				<ProjectItem href="#lightbox4" src="/bnasty/imgs/4.webp" overlayText="" />
+				<ProjectItem href="#lightbox5" src="/bnasty/imgs/5.webp" overlayText="" />
+				<ProjectItem href="#lightbox6" src="/bnasty/imgs/6.webp" overlayText="" />
+				<ProjectItem href="#lightbox7" src="/bnasty/imgs/7.webp" overlayText="" />
+				<ProjectItem href="#lightbox8" src="/bnasty/imgs/8.webp" overlayText="" />
+				<ProjectItem href="#lightbox9" src="/bnasty/imgs/9.webp" overlayText="" />
+			</ProjectColumn>
+
+			<ProjectColumn>
+				<ProjectItem href="#lightbox16" src="/bnasty/imgs/16.webp" overlayText="" />
+				<ProjectItem href="#lightbox10" src="/bnasty/imgs/10.webp" overlayText="" />
+				<ProjectItem href="#lightbox11" src="/bnasty/imgs/11.webp" overlayText="" />
+				<ProjectItem href="#lightbox12" src="/bnasty/imgs/12.webp" overlayText="" />
+				<ProjectItem href="#lightbox13" src="/bnasty/imgs/13.webp" overlayText="" />
+				<!--
+				<ProjectItem href="#lightbox14" src="/bnasty/imgs/14.webp" overlayText="" />
+				-->
+			</ProjectColumn>
+
+			<ProjectColumn>
+				<ProjectItem href="#lightbox17" src="/bnasty/imgs/17.webp" overlayText="" />
+				<ProjectItem href="#lightbox21" src="/bnasty/imgs/21.webp" overlayText="" />
+				<ProjectItem href="#lightbox18" src="/bnasty/imgs/18.webp" overlayText="" />
+				<ProjectItem href="#lightbox15" src="/bnasty/imgs/15.webp" overlayText="" />
+				<ProjectItem href="#lightbox19" src="/bnasty/imgs/19.webp" overlayText="" />
+				<ProjectItem href="#lightbox20" src="/bnasty/imgs/20.webp" overlayText="" />
+				<ProjectItem href="#lightbox22" src="/bnasty/imgs/22.webp" overlayText="" />
+			</ProjectColumn>
+		</ProjectGrid>
+
+		<Lightbox id="lightbox3" src="/bnasty/imgs/3.webp" />
+		<Lightbox id="lightbox4" src="/bnasty/imgs/4.webp" />
+		<Lightbox id="lightbox5" src="/bnasty/imgs/5.webp" />
+		<Lightbox id="lightbox6" src="/bnasty/imgs/6.webp" />
+		<Lightbox id="lightbox7" src="/bnasty/imgs/7.webp" />
+		<Lightbox id="lightbox8" src="/bnasty/imgs/8.webp" />
+		<Lightbox id="lightbox9" src="/bnasty/imgs/9.webp" />
+
+		<Lightbox id="lightbox10" src="/bnasty/imgs/10.webp" />
+		<Lightbox id="lightbox11" src="/bnasty/imgs/11.webp" />
+		<Lightbox id="lightbox12" src="/bnasty/imgs/12.webp" />
+		<Lightbox id="lightbox13" src="/bnasty/imgs/13.webp" />
+		<Lightbox id="lightbox14" src="/bnasty/imgs/14.webp" />
+		<Lightbox id="lightbox15" src="/bnasty/imgs/15.webp" />
+		<Lightbox id="lightbox16" src="/bnasty/imgs/16.webp" />
+
+		<Lightbox id="lightbox17" src="/bnasty/imgs/17.webp" />
+		<Lightbox id="lightbox18" src="/bnasty/imgs/18.webp" />
+		<Lightbox id="lightbox19" src="/bnasty/imgs/19.webp" />
+		<Lightbox id="lightbox20" src="/bnasty/imgs/20.webp" />
+		<Lightbox id="lightbox21" src="/bnasty/imgs/21.webp" />
+		<Lightbox id="lightbox22" src="/bnasty/imgs/22.webp" />
+	</section>
+
+	<div id="credit"></div>
+	<div class="bg-3 flex-col">
+		<h1 class="text-white">Creditz</h1>
+	</div>
+	<section class="flex-col">
+		<h2>Thank Youz..</h2>
+		<p>First off, all credit goes to God, in the highest.</p>
+		<p>I'd also like to thank my Mom and Dad, for creating such a beautiful son.</p>
+		<p>
+			Shoutouts to my 
+			<strong>Web Designer: </strong>
+			<a class="self-link" href="https://gesty.dev">gesty</a>
+			for making such a dope website!
+		</p>
+		<p>And finally...</p>
+		<p>Thank you reader ... for visiting my page 😘 🌹 </p>
+		<a href="#">back to top</a>
+	</section>
+
 </Layout>

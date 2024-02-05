@@ -1,0 +1,81 @@
+---
+---
+<nav class="navbar navbar-expand-sm navbar-dark">
+  <a class="navbar-brand ml-2" href="/bnasty">B-Nasty</a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+    data-bs-target="#navbarScroll" 
+    aria-controls="navbarScroll" 
+    aria-expanded="false" 
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div 
+    class="collapse navbar-collapse justify-content-end text-center" 
+    id="navbarScroll"
+  >
+    <ul class="navbar-nav navbar-nav-scroll">
+
+      <li class="nav-item">
+        <a class="nav-link" href="#about">about me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#photos">photo gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#credit">creditz</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+
+  :root {
+    --bg: #fff;
+    --text: #000;
+    --gray: #c2c5c6;
+  }
+
+  .navbar {
+    text-transform: uppercase;
+    font-family: system-ui, sans-serif;
+    padding-inline: 3rem !important;
+    background-color: var(--text);
+  }
+
+  .navbar-brand {
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+    color: var(--bg);
+  }
+
+  .navbar-toggler {
+    border: 0;
+  }
+
+  .nav-item {
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+  }
+
+  .nav-link {
+    color: var(--bg);
+  }
+
+  .nav-link:hover {
+    color: var(--gray);
+    font-weight: 500;
+  }
+
+  .active {
+    color: var(--text) !important;
+    font-weight: 400;
+    text-decoration: underline dotted;
+    text-underline-offset: 5px;
+  }
+
+</style>

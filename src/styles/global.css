@@ -5,4 +5,102 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+h1,
+h2 {
+  font-family: "Protest Riot", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.bg-1,
+.bg-2,
+.bg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-1 {
+  background-image: url("/bnasty/imgs/1.webp");
+  min-height: 100vh;
+}
+
+.bg-2 {
+  background-image: url("/bnasty/imgs/2.webp");
+  min-height: 300px;
+}
+
+.bg-3 {
+  background-image: url("/bnasty/imgs/14.webp");
+  min-height: 300px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text-white {
+  color: #fff;
+  text-shadow: 3px 3px 5px #000;
+}
+
+.button {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  padding: 0.5rem 0.5rem;
+  border-radius: 50px;
+}
+
+section {
+  padding-block: 2rem;
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hero-img {
+  max-width: 40vw;
+  border-radius: 50px;
+}
+
+.extra-imgs {
+  display: flex;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+.extra-imgs > img {
+  max-height: 30vh;
+}
+
+.self-link {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-img {
+    max-width: 80vw;
+  }
+}
+
 /*# sourceMappingURL=global.css.map */
